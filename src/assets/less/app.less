@@ -1,0 +1,81 @@
+
+/**
+定义全局公用样式
+**/
+
+button + button {
+  margin-left: 8px;
+}
+
+// 滚动条样式
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.65);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.65);
+  }
+}
+// 滚动条样式
+.scroll-bar-gray {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #f1f1f1;
+  }
+  &::-webkit-scrollbar-track {
+    margin-left: 5px;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #c3c3c6;
+  }
+}
+
+
+// html样式
+.html-show {
+  // 恢复默认样式
+  h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: bolder;
+  }
+  h1{ font-size: 2em; margin: .67em 0; }
+  h2{ font-size: 1.5em; margin: .75em 0; }
+  h3{ font-size: 1.17em; margin: .83em 0; }
+  h4{ font-size: .83em; margin: 1.5em 0; }
+  h5{ font-size: .75em; margin: 1.67em 0; }
+  a {
+    text-decoration: underline;
+  }
+  ul {
+    list-style: disc;
+  }
+}
+
+.clearfix {
+  &::after {
+      display: block;
+      content: "";
+      clear: both;
+  }
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+li {
+  list-style: none;
+}
